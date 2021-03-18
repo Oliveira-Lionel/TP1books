@@ -19,13 +19,13 @@ public class BookShop {
      */
     public double cost(int[] books){
 
-	int sum = 8*books.length;  //cost without discount
-        int differentBooks = 0;  //amount of books with different name
-	int sumToDiscount = 0;  //money that needs to be discount
+	double sum = 8*books.length;     //cost without discount
+        int differentBooks = 0;          //amount of books with different name
+	double sumToDiscount = 0;        //money that needs to be discounted
 	
 	for(int i=0 ; i<books.length-1 ; i++) {
 		for(int j=i+1 ; j<books.length ; j++) {
-			if(!(books.get(i).equals(books.get(j)))) {
+			if(!(books.get(i).getName().equals(books.get(j).getName()))) {
 				differentBooks++;
 			}
 		}
