@@ -20,7 +20,7 @@ public class BookShop {
     public double cost(int[] books){
 
 	double sum = 8*books.length;     //cost without discount
-        int differentBooks = 0;          //amount of books with different name
+        int differentBooks = 1;          //amount of books with different name
 	double sumToDiscount = 0;        //money that needs to be discounted
 	
 	for(int i=0 ; i<books.length-1 ; i++) {
